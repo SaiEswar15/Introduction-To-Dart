@@ -1,4 +1,4 @@
-public class functions {
+class Functions{
 
     public static String getString(){
         return "100pts";
@@ -15,5 +15,8 @@ public class functions {
         System.out.println(getString());
         System.out.println(getNumbers());
         System.out.println(getBoolean());
+        System.out.println(((Object) getString()).getClass().getSimpleName());
+        System.out.println(((Object) getNumbers()).getClass().getSimpleName());
+        System.out.println(((Object) getBoolean()).getClass().getSimpleName());
     }
 }
