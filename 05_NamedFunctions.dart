@@ -42,13 +42,35 @@
 //     print('$greetings I am $name of age $age');
 // }
 
+// void main()
+// {
+//     print("hello world");
+//     normalFunction(age : 25, greetings : 'hello', name : 'eswar');
+// }
+
+// void normalFunction({required String name,required String greetings,required int age})
+// {
+//     print('$greetings I am $name of age $age');
+// }
+
 void main()
 {
     print("hello world");
-    normalFunction(age : 25, greetings : 'hello', name : 'eswar');
+    normalFunction('world', ',', age: 25, greetings: 'hello', name: 'eswar');
 }
 
-void normalFunction({required String name,required String greetings,required int age})
+void normalFunction(address, comma,{required String name,required String greetings,required int age})
 {
-    print('$greetings I am $name of age $age');
+    print('$greetings $address $comma I am $name of age $age');
+}
+
+void main()
+{
+    print("hello world");
+    normalFunction('world', ',' , age: 25, greetings: 'hello', name: 'eswar');
+}
+
+void normalFunction(address, comma,{required String name,required String greetings,int age})
+{
+    print('$greetings $address $comma I am $name of age $age');
 }
