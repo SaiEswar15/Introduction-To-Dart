@@ -3,6 +3,13 @@ void main ()
   Vehicle car1 = new Car();
   (car1 as Car).printDescription();
   car1.printSomething();
+  
+}
+
+class Bike extends Vehicle{
+
+  bool handle = true;
+
 }
 
 class Material {
@@ -28,6 +35,7 @@ class Car extends Vehicle {
   @override
   bool air_conditioner = true;
 
+  @override
   printSomething()
   {
     print('cars have these props');
